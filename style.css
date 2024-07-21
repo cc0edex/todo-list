@@ -118,9 +118,9 @@ body {
   color: #700;
   display: none;
   margin-top: 5px;
-}
-.show{
-  display: inline-block !important;
+  &.show{
+    display: inline-block !important;
+  }
 }
  .DeleteTask{
   margin: 0;
