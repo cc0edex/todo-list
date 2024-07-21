@@ -113,6 +113,15 @@ body {
     transition: all .7s;
   }
 }
+.error{
+  margin-left: 40px;
+  color: #700;
+  display: none;
+  margin-top: 5px;
+}
+.show{
+  display: inline-block !important;
+}
  .DeleteTask{
   margin: 0;
   width: 100%;
