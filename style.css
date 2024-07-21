@@ -113,15 +113,6 @@ body {
     transition: all .7s;
   }
 }
-.error{
-  margin-left: 40px;
-  color: #700;
-  display: none;
-  margin-top: 5px;
-  &.show{
-    display: inline-block !important;
-  }
-}
  .DeleteTask{
   margin: 0;
   width: 100%;
@@ -293,6 +284,15 @@ body {
   .done{
     background-color: #8cd58cab;
   }
+.error{
+  margin-left: 40px;
+  color: #700;
+  display: none;
+  margin-top: 5px;
+  &.show{
+    display: inline-block !important;
+  }
+}
   @media screen and (max-width: 480px) {
     #title{
       width: 90%;
