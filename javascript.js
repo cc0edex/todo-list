@@ -44,6 +44,7 @@ function showAddForm() {
 function hideAddForm() {
   document.querySelector(".addTask").classList.remove("active");
   document.getElementById("add-input").value = "";
+  document.getElementById("error").classList.remove("show");
 }
 function addTask() {
   let value = document.getElementById("add-input").value;
@@ -52,8 +53,14 @@ function addTask() {
     date: taskdate,
     isDone: false,
   };
-  tasks.push(newObj);
-  hideAddForm();
+  if (value == "") {
+    document.getElementById("error").classList.add("show");
+  } else {
+    tasks.push(newObj);
+    hideAddForm();
+  }
+  // tasks.push(newObj);
+  // hideAddForm();
   fillTasksOnPage();
 }
 function deleteTask(btn) {
