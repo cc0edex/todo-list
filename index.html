@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo List - By Codex</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ 
+  </head>
+
+  <body id="body">
+<div>
+  <div id="root">
+    <div id="addTask" class="addTask">
+      <div id="close">
+        <button class="close btn" onclick="hideAddForm()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div id="add" class="add">
+      <div id="add-content">
+          <div id="add-title">
+              <h1 id="add-h1">Add New Task</h1>
+          </div>
+              <div id="add-entry">
+                  <input type="text" value="" id="add-input" placeholder="Enter a task">
+                  <button id="add-btn" onclick="addTask()">
+                    <span class="material-symbols-outlined">add</span>
+                  </button>
+              </div>
+              <span id="error" class="error">Please enter a valid task</span>
+      </div>             
+                     
+      </div>
+</div>
+<div id="DeleteTask" class="DeleteTask">
+      
+  <div id="delete" class="delete">
+  <div id="delete-content">
+      <div id="delete-title" style="margin-top: 16px;margin-left: 30px;">
+      </div>
+<div id="delete-btn" style="display: flex;justify-content: right;padding-top: 70px;padding-right: 27px;">
+  <button class="dbtn" id="cancel" onclick="hideDeleteForm()">Cancel</button>
+  <button class="dbtn red" id="remove" onclick="deleted()">Delete</button></div>
+          
+  </div>             
+                 
+  </div>
+</div>
+<div id="editTask" class="editTask">
+  <div id="close">
+    <button class="close btn" onclick="hideEditForm()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+  <div id="edit" class="edit">
+  <div id="edit-content">
+      <div id="edit-title">
+          <h1 id="edit-h1">Edit Task</h1>
+      </div>
+          <div id="edit-entry">
+              <input type="text" value="" id="edit-input" placeholder="Enter a task">
+              <button id="edit-btn" onclick="editTask()">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+          </div>
+          <span id="edit-error"  class="error">Please enter a valid task</span>
+  </div>               
+</div>
+</div>
+    <div id="divs">
+          <div id="title">
+            <div id="title-content">
+                <h1 style="color: #181665b5;text-align: center;font-size: 2em;font-weight: 800;width: 100%;">My Task</h1>
+                <button id="first-add-btn" onclick="showAddForm()" class="btn" style="background-color: #1959ab;margin-right: 1px;"><span class="material-symbols-outlined">add_circle</span></button>
+            </div>
+
+          </div>
+            <div id="tasks">
+              <!-- <div id="task">
+                <div id="content">
+                  <h1 style="color:#1f1e48d4;margin-top: 10px;margin-left: 20px;font-weight: 400;">Task Title</h1>
+                      <p style="color: #1f1e48d4;margin-left: 20px;display: flex;align-items: end;">
+                        <span class="material-symbols-outlined">calendar_month</span>10/10/2003</p>
+              </div>
+                  <div id="buttons">
+                      <button class="btn" style="background-color: #5cb57f;"><span class="material-symbols-outlined">check_circle</span></button>
+                      <button class="btn" style="background-color: #3d51bcf5"><span class="material-symbols-outlined">edit</span></button>
+                      <button class="btn" style="background-color: #c21616"><span class="material-symbols-outlined">delete</span></button>
+                  </div>
+            </div> -->
+
+
+          </div>
+    </div>
+</div>
+</div>
+      
+    
+  </body>
+  <script src="javascript.js"></script>
+</html>
