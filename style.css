@@ -265,6 +265,15 @@
       .buttons{
         width: 46%;
       }
+      #successToast{
+        width: 95%;
+    }
+    #deleteToast{
+        width: 95%;
+    }
+    #editToast{
+        width: 95%;
+    }
 }
 @media screen and (max-width: 408px) {
     .task-title{
