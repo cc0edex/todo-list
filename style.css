@@ -274,6 +274,10 @@
     #editToast{
         width: 95%;
     }
+    .notask-title{
+
+        margin-top: 29px !important;
+    }
 }
 @media screen and (max-width: 408px) {
     .task-title{
@@ -281,5 +285,13 @@
     }
     #addTaskModalTitle{
         font-size: 32px !important;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+    .header{
+        width: 90%;
+    }
+    .task{
+        width: 90%;
     }
 }
