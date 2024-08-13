@@ -12,7 +12,7 @@ function readTasks() {
     tasksDiv.innerHTML = `
     <div class="task">
               <div class="nocontent">
-                          <h1 class="notask-title" style="text-align: center;margin-top: 17px;color: #1f1e48d4;">No Tasks Here</h1>
+                          <h1 class="notask-title" style="">No Tasks Here</h1>
   
               </div>
   
